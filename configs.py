@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @I_Am_Only_One_1
 
 import os
 
@@ -13,8 +13,8 @@ class Config(object):
 	UPDATES_CHANNEL = int(os.environ.get("UPDATES_CHANNEL"))
 	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 	ABOUT_BOT_TEXT = f"""
-**This is Permanent Files Sharing Bot!**
-Send Me Any File I Will Save It In My Database & Give You A Permanent Public Shareable Link. I Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I Will Add Save Uploaded File in Channel & Add Shareable Button Link. Thanks For Using!
+**This is Permanent File Sharing Bot!**
+Send Me Any File I will Save It In My Database & Give You A Permanent Public Shareable Link. Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I will Save Uploaded Files in Channel & Add Shareable Button Link. Thanks For Using!
 
 🤖 **My Name:** [SHAREit Bot](https://t.me/{BOT_USERNAME})
 
@@ -24,22 +24,22 @@ Send Me Any File I Will Save It In My Database & Give You A Permanent Public Sha
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @I_Am_Only_One_1
+🧑🏻‍💻 **Developer:** [I_Am_Only_One_1](https://t.me/I_Am_Only_One_1)
 
-👥 **Support Group:** [S1 Support BOT](https://t.me/safothebot)
+👥 **Support Group:** [S1 Support Bot](https://t.me/safothebot)
 
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @I_Am_Only_One_1
+🧑🏻‍💻 **Developer:** Safone🔥
 
 Developer is Super Noob. Just Learning from Official Docs. Please Donate The Developer For Keeping The Service Alive!✌️✌️
 
-👻NB: Remember That, Developer Will Delete Adult Contents From Database. So Better Don't Store Those Kind of Things🤬🤬
+👻NB: Remember That, Developer will Delete Adult Contents From Database. So Better Don't Store Those Kind of Things. Be Carefull!🤬🤬
 
-👉To Donate Please [Contact Me!](https://t.me/I_Am_Only_One_1)
+To Donate or Any Issue Please [Contact Me!](https://t.me/I_Am_Only_One_1)
 """
 	HOME_TEXT = """
 Hi, [{}](tg://user?id={})\n\nThis is **SHAREit Bot**!! 🔥
 
-Send Me Any File I Will Give You A Permanent Sharable Link. I Support Channel Also! Check Details In **About Bot** Button. Thank You!!
+Send Me Any File I will Give You A Permanent Sharable Link. I Support Channel Also! For Details Click On **About Bot** Button. Thank You!!😍
 """
