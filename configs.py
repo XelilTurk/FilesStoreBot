@@ -13,8 +13,8 @@ class Config(object):
 	UPDATES_CHANNEL = int(os.environ.get("UPDATES_CHANNEL"))
 	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 	ABOUT_BOT_TEXT = f"""
-**This is Permanent Files Store Bot!**
-Send Me Any File I will Save It in My Database & Give You A Permanent Shareable Link. I Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I will Save Uploaded File in Channel & Add Shareable Button Link. Wanna Try Now?
+**This Is Permanent Files Store Bot!**
+__Send Me Any File I will Save It in My Database & Give You A Permanent Shareable Link. I Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I will Save Uploaded File in Channel & Add Shareable Button Link. Wanna Try Now?__
 
 🤖 **My Name:** [Store & Share](https://t.me/{BOT_USERNAME})
 
@@ -36,7 +36,7 @@ Developer is Super Noob. Just Learning from Official Docs. Please Donate The Dev
 
 👉Remember That, Developer will Delete Adult Contents From Database. So Better Don't Store Those Kind of Things. Be Careful !🤬🤬
 
-👻 Any Issue Please [Contact Me](https://m.me/cadet.safone) (Facebook)!
+👻__Any Issue Please [Contact Me](https://m.me/cadet.safone) (Facebook)!__
 """
 	HOME_TEXT = """
 Hi, [{}](tg://user?id={})\n\nThis is **Store & Share Bot!!** 🔥
