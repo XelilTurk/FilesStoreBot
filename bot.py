@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @I_Am_Only_One_1
 
 import os
 import time
@@ -73,7 +73,7 @@ async def start(bot, cmd):
 			except UserNotParticipant:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="**Please Join My Updates Channel To Use This Bot!**\n\nDue to Overload, Only Channel Subscribers Can Use The Bot!!",
+					text="**Please Join My Updates Channel!**\n\n__Only Channel Subscribers Can Use The Bot!!__",
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
@@ -112,7 +112,7 @@ async def start(bot, cmd):
 		try:
 			file_id = int(usr_cmd)
 			send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL, message_id=file_id)
-			await send_stored_file.reply_text(f"**Here is Sharable Link of This File:** https://telegram.dog/{BOT_USERNAME}?start=SAFONE1_{file_id}\n\n__To Retrive The Stored File, Just Open The Link!__", disable_web_page_preview=True, quote=True)
+			await send_stored_file.reply_text(f"**Here is Sharable Link of This File:** https://telegram.dog/{BOT_USERNAME}?start=SAFONE_{file_id}\n\n__To Retrive The Stored File, Just Open The Link!__", disable_web_page_preview=True, quote=True)
 		except Exception as err:
 			await cmd.reply_text(f"Something Went Wrong!\n\n**Error:** `{err}`")
 
@@ -123,8 +123,8 @@ async def main(bot, message):
 		try:
 			forwarded_msg = await message.forward(DB_CHANNEL)
 			file_er_id = forwarded_msg.message_id
-			await forwarded_msg.reply_text(f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!", parse_mode="Markdown", disable_web_page_preview=True)
-			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=SAFONE1_{file_er_id}"
+			await forwarded_msg.reply_text(f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got The File Link!", parse_mode="Markdown", disable_web_page_preview=True)
+			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=SAFONE_{file_er_id}"
 			await editable.edit(
 				f"**Your File Stored In My Database!!**\n\nHere is The Permanent Link of Your File: {share_link} \n\nJust Click The Link To Get Your File!",
 				parse_mode="Markdown",
@@ -151,7 +151,7 @@ async def main(bot, message):
 		try:
 			forwarded_msg = await message.forward(DB_CHANNEL)
 			file_er_id = forwarded_msg.message_id
-			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=SAFONE1_{file_er_id}"
+			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=SAFONE_{file_er_id}"
 			CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Get Sharable Stored Link", url=share_link)]]))
 			if message.chat.username:
 				await forwarded_msg.reply_text(f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
@@ -215,13 +215,13 @@ async def broadcast_(c, m):
 	await out.delete()
 	if failed == 0:
 	    await m.reply_text(
-	        text=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.",
+	        text=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, {success} Success & {failed} Failed!",
 	        quote=True
 	    )
 	else:
 	    await m.reply_document(
 	        document='broadcast.txt',
-	        caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.",
+	        caption=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, {success} Success & {failed} Failed!",
 	        quote=True
 	    )
 	await os.remove('broadcast.txt')
