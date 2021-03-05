@@ -73,7 +73,7 @@ async def start(bot, cmd):
 			except UserNotParticipant:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="**Please Join My Updates Channel!**\n\n__Only Channel Subscribers Can Use The Bot!!__",
+					text="**Please Join My Updates Channel**\n\n__Only Channel Subscribers Can Use The Bot!__",
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
@@ -215,13 +215,13 @@ async def broadcast_(c, m):
 	await out.delete()
 	if failed == 0:
 	    await m.reply_text(
-	        text=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, {success} Success & {failed} Failed!",
+	        text=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, \n {success} Success! \n {failed} Failed!",
 	        quote=True
 	    )
 	else:
 	    await m.reply_document(
 	        document='broadcast.txt',
-	        caption=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, {success} Success & {failed} Failed!",
+	        caption=f"Broadcast Completed In `{completed_in}`\n\nTotal Users {total_users}.\nTotal Done {done}, \n {success} Success! \n {failed} Failed!",
 	        quote=True
 	    )
 	await os.remove('broadcast.txt')
