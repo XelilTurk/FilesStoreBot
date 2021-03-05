@@ -13,33 +13,33 @@ class Config(object):
 	UPDATES_CHANNEL = int(os.environ.get("UPDATES_CHANNEL"))
 	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 	ABOUT_BOT_TEXT = f"""
-**This is Permanent File Sharing Bot!**
-Send Me Any File I will Save It In My Database & Give You A Permanent Public Shareable Link. Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I will Save Uploaded Files in Channel & Add Shareable Button Link. Thanks For Using!
+**This is Permanent Files Store Bot!**
+Send Me Any File I will Save It in My Database & Give You A Permanent Shareable Link. I Also Works For Channel. Add Me To Channel As Admin with Edit Permission, I will Save Uploaded File in Channel & Add Shareable Button Link. Wanna Try Now?
 
-🤖 **My Name:** [SHAREit Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [Store & Share](https://t.me/{BOT_USERNAME})
 
-📝 **Language:** [Python3](https://www.python.org)
+📝 **Language:** [Python-3](https://www.python.org)
 
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** [I_Am_Only_One_1](https://t.me/I_Am_Only_One_1)
+🧑🏻‍💻 **Developer:** [Asm Safone](https://t.me/I_Am_Only_One_1)
 
-👥 **Support Group:** [S1 Support Bot](https://t.me/safothebot)
+👥 **Support Group:** [Bots Support](https://t.me/safothebot)
 
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** Safone🔥
+🧑🏻‍💻 **Developer:** [Asm Safone❤️](https://t.me/I_Am_Only_One_1)
 
 Developer is Super Noob. Just Learning from Official Docs. Please Donate The Developer For Keeping The Service Alive!✌️✌️
 
-👻NB: Remember That, Developer will Delete Adult Contents From Database. So Better Don't Store Those Kind of Things. Be Carefull!🤬🤬
+👉Remember That, Developer will Delete Adult Contents From Database. So Better Don't Store Those Kind of Things. Be Careful !🤬🤬
 
-To Donate or Any Issue Please [Contact Me!](https://t.me/I_Am_Only_One_1)
+👻 Any Issue Please [Contact Me](https://m.me/cadet.safone) (Facebook)!
 """
 	HOME_TEXT = """
-Hi, [{}](tg://user?id={})\n\nThis is **SHAREit Bot**!! 🔥
+Hi, [{}](tg://user?id={})\n\nThis is **Store & Share Bot!!** 🔥
 
-Send Me Any File I will Give You A Permanent Sharable Link. I Support Channel Also! For Details Click On **About Bot** Button. Thank You!!😍
+Send Me Any File I will Give You Permanent Shareable Link. Supports Channel Also! For Details Click On **About Bot** Button. Thank You !!😍
 """
